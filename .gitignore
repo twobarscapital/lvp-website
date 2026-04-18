@@ -1,0 +1,8 @@
+.DS_Store
+*.pdf
+Lobito_Rail_Ventures_Portfolio.pdf
+node_modules/
+.env
+*.log
+.vscode/
+.idea/

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lobito Rail Ventures — a mission-driven development finance vehicle deploying capital into energy, infrastructure, and logistics across the Lobito Corridor (Angola, DRC, Namibia).">
+    <meta name="keywords" content="Lobito Rail Ventures, Lobito Corridor, development finance, Angola infrastructure, DRC energy, Namibia logistics, African infrastructure investment, Kamoa Copper, hydroelectric DRC, African rail">
+    <title>Lobito Rail Ventures — Development Finance Without Borders</title>
+    <link rel="canonical" href="https://lobitorailventures.com">
+    <meta property="og:site_name" content="Lobito Rail Ventures">
+    <meta property="og:title" content="Lobito Rail Ventures — Development Finance Without Borders">
+    <meta property="og:description" content="Mission-driven investing across the Lobito Corridor. Energy, infrastructure, and logistics in Angola, DRC, and Namibia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lobitorailventures.com">
+    <meta property="og:image" content="https://lobitorailventures.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lobito Rail Ventures — Development Finance Without Borders">
+    <meta name="twitter:description" content="Mission-driven investing across the Lobito Corridor.">
+    <meta name="twitter:image" content="https://lobitorailventures.com/og-image.png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lobito Rail Ventures",
+        "url": "https://lobitorailventures.com",
+        "description": "Mission-driven development finance vehicle deploying capital into energy, infrastructure, and logistics across the Lobito Corridor.",
+        "areaServed": [
+            {"@type": "Country", "name": "Angola"},
+            {"@type": "Country", "name": "Democratic Republic of the Congo"},
+            {"@type": "Country", "name": "Namibia"}
+        ]
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy: #1b3a4f;
+            --navy-deep: #152e3f;
+            --cream: #fbf7ed;
+            --cream-warm: #f5efdf;
+            --gold: #c18c2d;
+            --gold-light: #d9a34a;
+            --teal: #0d6a65;
+            --text: #1b3a4f;
+            --text-muted: #6b7a85;
+            --text-on-navy: #fbf7ed;
+            --text-on-navy-muted: #a8b6c0;
+            --border: #e4dbc8;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--text);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 5%;
+            background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+            color: var(--text-on-navy);
+            position: relative;
+            border-top: 4px solid var(--gold);
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 880px;
+        }
+
+        .hero .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.9rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .hero .logo-mark {
+            background: var(--gold);
+            color: var(--navy-deep);
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            padding: 0.55rem 0.7rem;
+            line-height: 1;
+        }
+
+        .hero .logo-wordmark {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 6px;
+            color: var(--gold);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 1.75rem;
+            color: var(--text-on-navy);
+        }
+
+        .hero .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1rem, 1.6vw, 1.2rem);
+            color: var(--text-on-navy-muted);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+            margin: 2rem auto;
+            border: none;
+        }
+
+        .hero .countries {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+
+        /* Section base */
+        section.panel {
+            padding: 7rem 5%;
+        }
+
+        section.panel.cream {
+            background: var(--cream);
+            color: var(--text);
+        }
+
+        section.panel.navy {
+            background: var(--navy);
+            color: var(--text-on-navy);
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            font-size: clamp(1.85rem, 3.2vw, 2.6rem);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .section-heading.centered { text-align: center; }
+
+        .section-heading + .heading-rule {
+            width: 64px;
+            height: 3px;
+            background: var(--gold);
+            margin-bottom: 2rem;
+            border: none;
+        }
+
+        .section-heading.centered + .heading-rule { margin-left: auto; margin-right: auto; }
+
+        .section-kicker {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-kicker.centered { text-align: center; }
+
+        .section-lede {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: var(--text);
+            max-width: 780px;
+        }
+
+        .panel.navy .section-heading { color: var(--text-on-navy); }
+        .panel.navy .section-lede { color: var(--text-on-navy-muted); }
+
+        /* Map */
+        .map-wrap {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .map-wrap img {
+            max-width: 100%;
+            width: 440px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 20px 60px rgba(27, 58, 79, 0.15);
+        }
+
+        /* Sectors */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .sector-card {
+            background: rgba(251, 247, 237, 0.04);
+            border: 1px solid rgba(251, 247, 237, 0.08);
+            border-left: 3px solid var(--gold);
+            padding: 2.25rem 1.75rem;
+            transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+        }
+
+        .sector-card:hover {
+            transform: translateY(-4px);
+            border-left-color: var(--gold-light);
+            background: rgba(251, 247, 237, 0.06);
+        }
+
+        .sector-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            color: var(--gold-light);
+        }
+
+        .sector-card p {
+            color: var(--text-on-navy-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2.25rem 5%;
+            background: var(--navy-deep);
+            border-top: 1px solid rgba(193, 140, 45, 0.25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            color: var(--text-on-navy-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--text-on-navy-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover { color: var(--gold); }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            section.panel { padding: 5rem 6%; }
+            .hero { padding: 5rem 6%; }
+            .hero .logo-wordmark { font-size: 0.95rem; letter-spacing: 4px; }
+            .hero .countries { letter-spacing: 3px; }
+            footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="logo" aria-label="Lobito Rail Ventures">
+                    <span class="logo-mark">LRV</span>
+                    <span class="logo-wordmark">LOBITO RAIL VENTURES</span>
+                </div>
+                <h1>Development Finance<br>Without Borders</h1>
+                <p class="tagline">Mission-Driven Investing Across the Lobito Corridor</p>
+                <hr class="divider">
+                <p class="countries">Angola &nbsp;·&nbsp; DRC &nbsp;·&nbsp; Namibia</p>
+            </div>
+        </section>
+
+        <section class="panel cream" id="about">
+            <div class="section-inner">
+                <p class="section-kicker centered">About</p>
+                <h2 class="section-heading centered">About Lobito Rail Ventures</h2>
+                <hr class="heading-rule">
+                <p class="section-lede" style="text-align: center; margin: 0 auto;">
+                    Lobito Rail Ventures is a mission-driven development finance vehicle deploying capital directly into real assets across the Lobito Corridor. Every asset in the portfolio is intended to become a permanent local asset — owned, operated, and maintained in-country — creating lasting infrastructure, employment, and economic capacity for African communities. LRV bridges the gap between Western capital and African development without the overhead of traditional DFI channels.
+                </p>
+            </div>
+        </section>
+
+        <section class="panel cream" id="map" style="padding-top: 0;">
+            <div class="section-inner">
+                <p class="section-kicker centered">Geography</p>
+                <h2 class="section-heading centered">The Lobito Corridor</h2>
+                <hr class="heading-rule">
+                <p class="section-lede" style="text-align: center; margin: 0 auto;">
+                    A transformative rail, road, and logistics backbone linking the mineral heartlands of the DRC and Zambia to the Atlantic port of Lobito.
+                </p>
+                <div class="map-wrap">
+                    <img src="image.png" alt="Map of the Lobito Corridor spanning Angola, DRC, Zambia, and Namibia, with the rail route from Lobito through Huambo, Kolwezi, Solwezi to Kapiri Mposhi highlighted">
+                </div>
+            </div>
+        </section>
+
+        <section class="panel navy" id="sectors">
+            <div class="section-inner">
+                <p class="section-kicker centered">Sectors</p>
+                <h2 class="section-heading centered">Sector Focus</h2>
+                <hr class="heading-rule">
+                <div class="sectors-grid">
+                    <div class="sector-card">
+                        <h3>Energy</h3>
+                        <p>Hydroelectric generation, transmission backbones, and power infrastructure anchoring clean baseload for the DRC and Angola.</p>
+                    </div>
+                    <div class="sector-card">
+                        <h3>Infrastructure</h3>
+                        <p>Rail capacity, intermodal terminals, and fiber-optic backbone spanning the Atlantic port of Lobito through the corridor's interior.</p>
+                    </div>
+                    <div class="sector-card">
+                        <h3>Logistics</h3>
+                        <p>Petroleum terminals and bulk mineral movement connecting Southern African resource heartlands to global Atlantic markets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Lobito Rail Ventures. All rights reserved.</p>
+        <a href="mailto:contact@lobitorailventures.com">contact@lobitorailventures.com</a>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
